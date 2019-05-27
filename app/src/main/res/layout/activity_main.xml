@@ -8,12 +8,70 @@
         tools:context=".MainActivity">
 
     <TextView
-            android:layout_width="wrap_content"
+            android:text="@string/login"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="4dp"
 
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColorHint="#fff"
+            android:hint="@string/name"
+            android:background="@android:color/transparent"
+
+            android:drawablePadding="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:ems="10"
+            android:id="@+id/editText" android:layout_marginTop="236dp" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+
+            android:drawablePadding="12dp"
+            app:layout_constraintCircleRadius="90dp"
+            android:hint="@string/pswd"
+            android:textColorHint="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:ems="10"
+            android:id="@+id/editText2" android:layout_marginTop="308dp" app:layout_constraintHorizontal_bias="1.0"/>
+    <Button
+            android:text="@string/login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="16dp"
+
+            android:textColor="#fff"
+            android:textSize="20sp" android:layout_marginTop="384dp" app:layout_constraintHorizontal_bias="1.0"/>
+    android:id="@+id/button" android:layout_marginTop="384dp" app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:text="@string/sign"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+
+            android:padding="16dp"
+            android:textColor="#fff"
+            android:id="@+id/button2" android:layout_marginTop="464dp" app:layout_constraintHorizontal_bias="0.0"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

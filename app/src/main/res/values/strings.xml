@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">encharet</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="pswd">Password</string>
+
+    <string name="sign">Signup</string>
 </resources>
