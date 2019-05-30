@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".registeration"
+                                                   android:background="@drawable/new_login_gradient">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+            android:layout_width="240dp"
+            app:srcCompat="@drawable/ic_person_white_24dp" android:contentDescription="this is image"
+
+            android:layout_height="120dp"
+            android:id="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="48dp"
+            app:layout_constraintHorizontal_bias="0.497"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_person_white_24dp"
+            android:drawablePadding="12dp"
+            android:textColorHint="#fff"
+            android:textSize="24sp"
+            android:hint="@string/name"
+            android:ems="10"
+            android:id="@+id/un" android:layout_marginTop="228dp" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock_red_400_24dp"
+            android:drawablePadding="12dp"
+            app:layout_constraintCircleRadius="90dp"
+            android:textSize="24sp"
+            android:hint="@string/pswd"
+            android:textColorHint="#fff"
+            android:ems="10"
+            android:id="@+id/pass" android:layout_marginTop="368dp" app:layout_constraintHorizontal_bias="0.538"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/phoneicon"
+            android:drawablePadding="12dp"
+            android:textColorHint="#fff"
+            android:textSize="24sp"
+
+            android:hint="@string/pno"
+            android:ems="10"
+            android:id="@+id/phoneno" android:layout_marginTop="284dp" app:layout_constraintHorizontal_bias="0.538"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"
+            android:hint="@string/ad"
+            android:drawableLeft="@drawable/adress"
+            android:drawablePadding="12dp"
+            android:textColorHint="#fff"
+            android:ems="10"
+            android:textSize="24sp"
+            android:id="@+id/adress" android:layout_marginTop="332dp" app:layout_constraintHorizontal_bias="0.538"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock_red_400_24dp"
+            android:drawablePadding="12dp"
+            android:hint="@string/cpas"
+            android:textColorHint="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:textSize="24sp"
+            android:id="@+id/editText7" android:layout_marginTop="420dp" app:layout_constraintHorizontal_bias="0.461"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
