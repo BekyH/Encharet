@@ -6,7 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/new_login_gradient"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+android:id="@+id/co">
 
     <TextView
             android:text="@string/login"
@@ -64,7 +65,7 @@
             android:padding="16dp"
 
             android:textColor="#fff"
-            android:textSize="20sp" android:layout_marginTop="412dp" app:layout_constraintHorizontal_bias="0.538"/>
+            android:textSize="20sp"
     android:id="@+id/lbtn" android:layout_marginTop="384dp" app:layout_constraintHorizontal_bias="0.0"/>
     <Button
             android:text="@string/sign"
