@@ -11,6 +11,7 @@
     <string name="pno">phonenumber</string>
     <string name="ad">address</string>
     <string name="cpas">confirmpassword</string>
+    <string name="rega">Registeration</string>
 
 
 </resources>
