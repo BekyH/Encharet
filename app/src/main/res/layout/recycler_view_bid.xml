@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Your bids"
+            android:textSize="24sp"
+            android:gravity="center"/>
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       app:layout_constraintStart_toStartOf="parent"
+                                                       app:layout_constraintEnd_toEndOf="parent"
+                                                       app:layout_constraintRight_toLeftOf="parent"
+                                                       app:layout_constraintStart_toEndOf="parent"
+                                                       app:layout_constraintTop_toTopOf="parent"
+                                                       android:minHeight="120dp"
+                                                       app:layout_constraintHorizontal_bias="1.0"
+                                                       tools:layout_editor_absoluteY="60dp"
+                                                       tools:layout_editor_absoluteX="0dp">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Your bid"
+                  android:textSize="22sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+         android:textSize="22sp"/>
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/withdraw_btn"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="35dp"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="withdraw"/>
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/editbid_btn"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="195dp"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Bid"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
