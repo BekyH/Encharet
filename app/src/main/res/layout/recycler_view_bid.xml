@@ -32,7 +32,8 @@
                   android:textSize="22sp"/>
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-         android:textSize="22sp"/>
+         android:textSize="22sp"
+        android:id="@+id/bids_textview"/>
         <com.google.android.material.button.MaterialButton
                 android:id="@+id/withdraw_btn"
                 style="@style/Widget.MaterialComponents.Button"

@@ -1,4 +1,4 @@
-package com.example.cheretaviews
+package com.example.encharet
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -27,13 +27,17 @@ class ItemAdapter(val context: Context):RecyclerView.Adapter<ItemAdapter.Itemvie
     }
 
     override fun onBindViewHolder(holder: ItemviewHolder, position: Int) {
-        val item = items[position]
-        holder.itemView.itemname_textview.text = item.Itemsname
-        holder.itemView.usernamae_textview.text = item.username
-        holder.itemView.startingprice_textview.text = item.startingprice
-        holder.itemView.date_textview.text = item.date
-        //To change body of created functions use File | Settings | File Templates.
-    }
+
+
+
+            val item = items[position]
+            holder.itemView.itemname_textview.text = item.Itemsname
+            holder.itemView.usernamae_textview.text = item.username
+            holder.itemView.startingprice_textview.text = item.startingprice
+            holder.itemView.date_textview.text = item.date
+            //To change body of created functions use File | Settings | File Templates.
+        }
+
 
     class ItemviewHolder(itemview:View):RecyclerView.ViewHolder(itemview)
 }
