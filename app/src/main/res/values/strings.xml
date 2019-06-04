@@ -12,6 +12,11 @@
     <string name="ad">address</string>
     <string name="cpas">confirmpassword</string>
     <string name="rega">Registeration</string>
+    <string name="title_activity_main">MainActivity</string>
 
+    <string name="tab_text_1">Posts</string>
+    <string name="tab_text_2">Your Bids</string>
+    <string name="tab_text_3">Your Posts</string>
+    <string name="tab_text_4">Status</string>
 
 </resources>

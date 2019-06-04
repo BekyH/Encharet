@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_registeration.view.*
 import kotlin.math.log
 
-class registeration : Fragment() {
+class RegistrationFragment : Fragment() {
     lateinit var username:EditText
     lateinit var password:EditText
     lateinit var address:EditText
@@ -43,7 +43,7 @@ class registeration : Fragment() {
         address = view.adress
         pno = view.phoneno
         confirmpswd = view.cpass
-        loginbtn = view.login_btn
+       //loginbtn = view.login_btn
         sigupbtn = view.signup_btn
       loginbtn.setOnClickListener {
 
@@ -72,12 +72,7 @@ class registeration : Fragment() {
         var ph:String = pno.text.toString()
         var a:String = address.text.toString()
         var cp :String = confirmpswd.text.toString()
-        if(u.trim().isEmpty() || p.trim().isEmpty() || a.trim().isEmpty() || cp.trim().isEmpty() || ph.trim().isEmpty() ){
-            return false
-        }
-        else{
-            return true
-        }
+        return !(u.trim().isEmpty() || p.trim().isEmpty() || a.trim().isEmpty() || cp.trim().isEmpty() || ph.trim().isEmpty())
     }
     fun clearFields(){
         username.setText("")

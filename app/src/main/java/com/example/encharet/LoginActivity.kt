@@ -19,7 +19,7 @@ lateinit var usname:EditText
         pas = ps
         sb = sbtn
         lb = lbtn
-        val registerfragement = registeration()
+        val registerfragement = RegistrationFragment()
         sb.setOnClickListener {
        supportFragmentManager.beginTransaction()
            .replace(R.id.co,registerfragement)
