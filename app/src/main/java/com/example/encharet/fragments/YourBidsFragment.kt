@@ -1,5 +1,6 @@
 package com.example.tabbed
 
+import android.os.AsyncTask
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,9 +16,12 @@ class YourBidsFragment: Fragment() {
     lateinit var recyclerbid: RecyclerView
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view =  inflater.inflate(R.layout.fragment_your_bids, container, false)
-        //recyclerbid = view.recycler_bid
-      //  recyclerbid.layoutManager = LinearLayoutManager(requireContext())
-       // recyclerbid.adapter = Bidadapter(requireContext())
+
+
+        recyclerbid = view.recycler_bid
+            recyclerbid.layoutManager = LinearLayoutManager(requireContext())
+            recyclerbid.adapter = Bidadapter(requireContext())
+
 
         return view
     }
