@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   tools:context=".BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+            android:text="Post an item"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="5dp"
+            tools:layout_editor_absoluteX="0dp" android:id="@+id/textView" android:textSize="24sp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="24sp"
+            android:id="@+id/item_name_edittext" android:hint="name of an item" android:layout_marginTop="48dp"/>
+    <Button
+            android:text="upload"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/upload_btn" android:layout_marginTop="108dp" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:ems="10"
+            android:id="@+id/expire_date_edittext" android:hint="Expire date" android:layout_marginTop="248dp"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:ems="10"
+            android:id="@+id/post_date_edittext" android:layout_marginTop="176dp" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:hint="Post Date"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:ems="10"
+            android:id="@+id/starting_price_edittext" android:layout_marginTop="324dp" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:hint="starting Price"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/description_edittext" android:hint="description" android:layout_marginTop="404dp"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+    <Button
+            android:text="Post"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_btn" android:layout_marginTop="496dp" android:layout_marginEnd="212dp"
+            android:layout_marginRight="212dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/file_edittext"
+            android:hint="choose a file" android:layout_marginTop="108dp" android:layout_marginEnd="108dp"
+            android:layout_marginRight="108dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
